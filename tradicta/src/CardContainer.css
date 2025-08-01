@@ -1,0 +1,59 @@
+.CardContainer-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.CardContainer {
+  background: linear-gradient(135deg, hsl(0, 11%, 5%) 0%, hsl(50, 97%, 65%) 100%);
+  border-radius: 24px;
+  box-shadow: 0 6px 24px rgba(200, 120, 200, 0.15);
+  padding: 24px 16px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+  border: 2px solid black;
+  margin: left 50px; 
+
+  
+}
+
+.CardContainer:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(200, 120, 200, 0.25);
+}
+
+.CardContainer img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px;
+
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(200, 120, 200, 0.10);
+}
+
+.CardContainer h3 {
+  font-family: 'Segoe Script', 'Brush Script MT', cursive;
+  font-size: 1.4rem;
+  color:burlywood;
+  margin: 12px 0 8px 0;
+}
+
+.CardContainer p {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  color:burlywood;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .CardContainer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

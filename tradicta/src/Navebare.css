@@ -1,0 +1,158 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #6200ea;
+  padding: 15px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  position: sticky;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Main content */
+.content {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: white;
+  flex: 1;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+/* Image Sections */
+.image-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.95em;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #6200ea;
+    padding: 10px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+/* Additional styles for the logo */
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DZ28id-1SSsATC3dXnz1v1I11o3DRNiA1g&s');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}

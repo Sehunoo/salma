@@ -1,0 +1,28 @@
+.Card{
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.2s ease-in-out;
+
+}
+.img.Card {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+.Card h3 {
+  font-family: 'Segoe Script', 'Brush Script MT', cursive;
+  font-size: 1.4rem;
+  color: burlywood;
+  margin: 0.75rem 0;
+}
+.Card p {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  color: burlywood;
+  margin-bottom: 0;
+  text-align: center;
+}

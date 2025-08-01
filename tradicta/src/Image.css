@@ -1,0 +1,15 @@
+.img.Card {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: adds a soft shadow */
+}
